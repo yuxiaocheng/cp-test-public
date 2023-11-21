@@ -1,0 +1,6 @@
+checkinterval: 60
+kubeconfig: /root/.kube/config
+logpath: /var/log/monitor.log
+namespace: cos-system,kube-system
+restartlimit: 20
+vip: 172.19.30.65

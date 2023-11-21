@@ -1,0 +1,7 @@
+set -x;
+pwd;
+cd nodejs_build;
+npm config set cache ../node_modules;
+npm config get cache;
+npm install --prefer-offline;
+npm run build;

@@ -1,0 +1,1 @@
+FROM registry.cn-beijing.aliyuncs.com/hub-mirrors/tomcat:7

@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec <<< FAILURE! - in com.example.demo.ApplicationTests
+testcase2(com.example.demo.ApplicationTests)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: is <2>
+     but: was <1>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at com.example.demo.ApplicationTests.testcase2(ApplicationTests.java:18)
+

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  generation: 1
+  labels:
+    app: statefulset
+  name: app-sts
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: statefulset
+  serviceName: statefulset-svc
+  template:
+    metadata:
+      labels:
+        app: statefulset
+    spec:
+      containers:
+        - image: 'nginx:latest'
+          imagePullPolicy: Always
+          name: statefulset
+          resources:
+            requests:
+              cpu: 250m
+              memory: 512Mi

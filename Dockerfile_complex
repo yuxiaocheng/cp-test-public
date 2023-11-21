@@ -1,0 +1,4 @@
+FROM cp-test-dont-delete-cn-beijing.cr.volces.com/cp-auto/centos:centos
+RUN touch somefile
+RUN yum install -y openssl
+RUN openssl genrsa 4096

@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: spring-boot-sample
+spec:
+  rules:
+    - host: spring-boot-sample.c2a3f921235bb4fcbba68ad8be5439680.cn-shanghai.alicontainer.com
+      http:
+        paths:
+          - backend:
+              serviceName: spring-boot-sample
+              servicePort: 80
+            path: /
